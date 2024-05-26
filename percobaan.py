@@ -19,4 +19,17 @@ def home():
         kembali()
 
 def kembali():
-      print("")
+      print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    Pemilihan = int(input("PILIH KECAMATAN YANG ADA DI KABUPATEN BANYUMAS => "))
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    if Pemilihan == 1:
+        print("--KECAMATAN AJIBARANG--")
+        print(f"ORGANIK =  {sisa_makanan[0]+kotoran_hewan[0]+dedaunan[0]}Kg" )
+        print(f"NON-ORGANIK = {plastik[0]+logam[0]+kaca[0]+elektronik[0]+karet[0]}Kg " )
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        tampilkanMenu()
+    elif Pemilihan == 2:
+        print("KECAMATAN BANYUMAS : ")
+        print(f"ORGANIK = {plastik[1]+logam[1]+kaca[1]+elektronik[1]+karet[1]} Kg" )
+        print("NON-ORGANIK = 400 kg" )
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
