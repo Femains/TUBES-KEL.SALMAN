@@ -33,6 +33,24 @@ def kembali():
         print(f"ORGANIK = {plastik[1]+logam[1]+kaca[1]+elektronik[1]+karet[1]} Kg" )
         print("NON-ORGANIK = 400 kg" )
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    elif Pemilihan == 3:
+        print("KECAMATAN BATURADEN : ")
+        print(f"ORGANIK = {plastik[2]+logam[3]+kaca[3]+elektronik[3]+karet[3]} Kg" )
+        print("NON-ORGANIK = 400 kg" )
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+    elif Pemilihan == 4:
+        print("KECAMATAN CILONGOK : ")
+        print(f"ORGANIK = {plastik[4]+logam[4]+kaca[4]+elektronik[4]+karet[4]} Kg" )
+        print("NON-ORGANIK = 400 kg" )
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+    elif Pemilihan == 5:
+        print("KECAMATAN PURWOKERTO BARAT : ")
+        print(f"ORGANIK = {plastik[5]+logam[5]+kaca[5]+elektronik[5]+karet[5]} Kg" )
+        print("NON-ORGANIK = 400 kg" )
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
 
 def tampilkanMenu():
     while True:
