@@ -19,7 +19,7 @@ def home():
         kembali()
 
 def kembali():
-      print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
     Pemilihan = int(input("PILIH KECAMATAN YANG ADA DI KABUPATEN BANYUMAS => "))
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
     if Pemilihan == 1:
@@ -33,3 +33,11 @@ def kembali():
         print(f"ORGANIK = {plastik[1]+logam[1]+kaca[1]+elektronik[1]+karet[1]} Kg" )
         print("NON-ORGANIK = 400 kg" )
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+def tampilkanMenu():
+    while True:
+        for t in range(1):
+            print(f"{t+1} Jenis Sampah")
+            print(f"{t+2} KEMBALI")
+            print(f"{t+3} KELUAR")
+            print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
