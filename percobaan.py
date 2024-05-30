@@ -1,3 +1,5 @@
+
+
 kecamatan = ["Ajibarang", "Banyumas", "Baturaden", "Cilongok", "Purwokerto Barat", "Purwokerto Selatan", "Purwokerto Timur", "Sokaraja"]
 
 plastik = [160, 225, 135, 190, 255, 320, 245, 180]
@@ -11,12 +13,21 @@ kotoran_hewan = [38, 92, 14, 69, 80, 24, 56, 73]
 dedaunan = [53, 21, 84, 10, 76, 33, 95, 47]
 
 def home():
-    #while True:
-        print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
-        print ("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
-        for i in range(len(kecamatan)) :
-            print(f"{i+1} {kecamatan[i]}")
-        kembali()
+    print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    print("1. List Bank Sampah")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    menu_pilih = int(input("Masukan menu yang diinginkan : "))
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    if menu_pilih == 1:
+        list_kecamatan()
+
+def list_kecamatan():
+    for i in range(len(kecamatan)):
+        print(f"{i+1}. {kecamatan[i]}")
+    
+    print("9. Kembali")
+    kembali()
 
 def kembali():
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
@@ -53,9 +64,11 @@ def kembali():
 
 
 def tampilkanMenu():
-    while True:
+    #while True:
         for t in range(1):
             print(f"{t+1} Jenis Sampah")
             print(f"{t+2} KEMBALI")
             print(f"{t+3} KELUAR")
             print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+home()
