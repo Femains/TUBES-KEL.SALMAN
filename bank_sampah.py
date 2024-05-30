@@ -16,7 +16,7 @@ def home():
         print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
         print ("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
         for i in range(len(kecamatan)) :
-            print(f"{i+1} {kecamatan[i]}")
+            print(f"{i+1}. {kecamatan[i]}")
         kembali()
 
 def kembali():
@@ -36,11 +36,10 @@ def kembali():
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
 
 def tampilkanMenu():
-    while True:
         for t in range(1):
-            print(f"{t+1} Jenis Sampah")
-            print(f"{t+2} KEMBALI")
-            print(f"{t+3} KELUAR")
+            print(f"{t+1}. Jenis Sampah")
+            print(f"{t+2}. KEMBALI")
+            print(f"{t+3}. KELUAR")
             print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
             
 home()
