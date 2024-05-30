@@ -1,4 +1,4 @@
-<<<<<<< HEAD:bank_sampah.py
+
 kecamatan = ["Ajibarang", "Banyumas", "Baturaden", "Cilongok", "Purwokerto Barat", "Purwokerto Selatan", "Purwokerto Timur", "Sokaraja"]
 
 plastik = [160, 225, 135, 190, 255, 320, 245, 180]
@@ -42,7 +42,6 @@ def tampilkanMenu():
             print(f"{t+2} KEMBALI")
             print(f"{t+3} KELUAR")
             print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
-=======
 
 
 kecamatan = ["Ajibarang", "Banyumas", "Baturaden", "Cilongok", "Purwokerto Barat", "Purwokerto Selatan", "Purwokerto Timur", "Sokaraja"]
@@ -117,4 +116,4 @@ def tampilkanMenu():
             print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
 
 home()
->>>>>>> a5feb612a84c4eebe0d62edd8afa95f13ca674f5:percobaan.py
+
