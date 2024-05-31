@@ -23,6 +23,11 @@ def home():
     elif menu_pilih == 2:
         tampilkanSortir()
 
+def list_kecamatan():
+    for i in range(len(kecamatan)):
+        print(f"{i+1} {kecamatan[i]}")
+    kembali()
+
 def kembali():
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
     Pemilihan = int(input("PILIH KECAMATAN YANG ADA DI KABUPATEN BANYUMAS => "))
