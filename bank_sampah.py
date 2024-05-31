@@ -1,3 +1,4 @@
+import sys
 
 kecamatan = ["Ajibarang", "Banyumas", "Baturaden", "Cilongok", "Purwokerto Barat", "Purwokerto Selatan", "Purwokerto Timur", "Sokaraja"]
 
@@ -42,5 +43,29 @@ def tampilkanMenu():
             print(f"{t+3}. KELUAR")
             print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
             
+        pilihan = int(input("MASUKKAN PILIHAN => "))
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        if pilihan == 1:
+            tampilkanSampah()
+        elif pilihan == 2:
+            home()
+        elif pilihan == 3:
+            sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
+        else:
+            print("Input yang dimasukan invalid, harap coba kembali")
+
+def tampilkanSampah():
+    print("---ORGANIK---")
+    print(f"SISA MAKANAN = {sisa_makanan[0]} Kg")
+    print(f"KOTORAN HEWAN = {kotoran_hewan[0]} Kg")
+    print(f"DEDAUNAN = {dedaunan[0]} Kg")
+    print("─━──━──━──━──━──━──━──━──━──━─")
+    print("--NON-ORGANIK--")
+    print(f"PLASTIK = {plastik[0]} Kg")
+    print(f"LOGAM = {logam[0]} Kg")
+    print(f"KACA = {kaca[0]} Kg")
+    print(f"ELEKTRONIK = {elektronik[0]} Kg")
+    print(f"KARET = {karet[0]} Kg")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
 home()
 
