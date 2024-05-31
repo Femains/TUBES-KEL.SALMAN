@@ -13,12 +13,15 @@ kotoran_hewan = [38, 92, 14, 69, 80, 24, 56, 73]
 dedaunan = [53, 21, 84, 10, 76, 33, 95, 47]
 
 def home():
-    #while True:
-        print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
-        print ("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
-        for i in range(len(kecamatan)) :
-            print(f"{i+1}. {kecamatan[i]}")
-        kembali()
+    print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    print("1. List Bank Sampah")
+    print("2. Sortir Sampah")
+    menu_pilih = int(input("Masukan menu yang diinginkan : "))
+    if menu_pilih == 1:
+        list_kecamatan()
+    elif menu_pilih == 2:
+        tampilkanSortir()
 
 def kembali():
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
