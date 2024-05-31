@@ -101,5 +101,21 @@ def tampilkanSampah():
     print(f"ELEKTRONIK = {elektronik[0]} Kg")
     print(f"KARET = {karet[0]} Kg")
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+     while True:
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        print("1. KEMBALI")
+        print("2. KELUAR")
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+        pilihan1 = int(input("MASUKKAN PILIHAN => "))
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        if pilihan1 == 1:
+            home()
+        elif pilihan1 == 2:
+            sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
+        else:
+            print("Input yang dimasukan invalid, harap coba kembali")
+
 home()
 
