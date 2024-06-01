@@ -143,7 +143,7 @@ def insertion_sort(array):
         array[j + 1] = item
     return array
 
-def tampilanSortir():
+def tampilkanSortir():
     pass
 home()
 
