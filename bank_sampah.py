@@ -163,14 +163,15 @@ def tampilkanSortir():
         print("")
         for kecamatan, berat in insertion_sort(gabung):
             print(f"- {kecamatan} {berat} kg")
-    
-
+            
     else:
         print("Input yang dimasukan invalid, harap coba kembali")
+        tampilkansortir()
 
     while True:
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
         print("1. KEMBALI")
+        print("2. HOME")
         print("2. KELUAR")
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
 
@@ -181,9 +182,10 @@ def tampilkanSortir():
             print(" ")
             print(" ")
             tampilkanSortir()
-
-        elif pilihan1 == 2:
-            sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
+        elif pilihan 1 == 2:
+            home()
+        elif pilihan1 == 3:
+            sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")     
         else:
             print("Input yang dimasukan invalid, harap coba kembali")
     
