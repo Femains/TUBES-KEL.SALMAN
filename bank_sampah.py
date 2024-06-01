@@ -119,6 +119,72 @@ def tampilkanSortir():
         print(f"{i+1} {jenis_sampah[i]} ")
 
     pilihan = int(input("MASUKKAN PILIHAN => "))
+    if pilihan in range(1, 9): 
+        gabung.clear()
+
+    if pilihan == 1 :
+        semua(plastik)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+        
+    elif pilihan == 2 :
+        semua(logam)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 3 :
+        semua(kaca)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 4 :
+        semua(elektronik)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 5 :
+        semua(karet)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 6 :
+        semua(sisa_makanan)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 7 :
+        semua(kotoran_hewan)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
+    elif pilihan == 8 :
+        semua(dedaunan)
+        print("")
+        for kecamatan, berat in insertion_sort(gabung):
+            print(f"- {kecamatan} {berat} kg")
     
+
+    else:
+        print("Input yang dimasukan invalid, harap coba kembali")
+
+    while True:
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        print("1. KEMBALI")
+        print("2. KELUAR")
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+
+        pilihan1 = int(input("MASUKKAN PILIHAN => "))
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        if pilihan1 == 1:
+            print(" ")
+            print(" ")
+            print(" ")
+            tampilkanSortir()
+
+        elif pilihan1 == 2:
+            sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
+        else:
+            print("Input yang dimasukan invalid, harap coba kembali")
     
 home()
