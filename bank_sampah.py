@@ -11,6 +11,7 @@ karet = [114, 210, 78, 98, 153, 79, 82, 126]
 sisa_makanan = [78, 58, 12, 36, 69, 45, 87, 20]
 kotoran_hewan = [38, 92, 14, 69, 80, 24, 56, 73]
 dedaunan = [53, 21, 84, 10, 76, 33, 95, 47]
+gabung = []
 
 def home():
     print("BANK SAMPAH YANG ADA DI KABUPATEN BANYUMAS")
@@ -43,7 +44,7 @@ def kembali():
         print(f"ORGANIK = {plastik[1]+logam[1]+kaca[1]+elektronik[1]+karet[1]} Kg" )
         print("NON-ORGANIK = 400 kg" )
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
-     elif Pemilihan == 3:
+    elif Pemilihan == 3:
         print("KECAMATAN BATURADEN : ")
         print(f"ORGANIK = {plastik[2]+logam[3]+kaca[3]+elektronik[3]+karet[3]} Kg" )
         print("NON-ORGANIK = 400 kg" )
@@ -110,7 +111,7 @@ def tampilkanSampah():
     print(f"KARET = {karet[0]} Kg")
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
 
-     while True:
+    while True:
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
         print("1. KEMBALI KE LIST KECAMATAN")
         print("2. HOME")
@@ -121,12 +122,28 @@ def tampilkanSampah():
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
         if pilihan1 == 1:
             list_kecamatan()
-        elif pilihan1 == 1:
+        elif pilihan1 == 2:
             home()
         elif pilihan1 == 3:
             sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
         else:
             print("Input yang dimasukan invalid, harap coba kembali")
 
+def semua(jenis):
+    for i in range(len(kecamatan)):
+        gabung.append((kecamatan[i], jenis[i]))
+    
+def insertion_sort(array):
+    for i in range(1, len(array)):
+        item = array[i]
+        j = i - 1
+        while j >= 0 and array[j][1] < item[1]:
+            array[j + 1] = array[j]
+            j -= 1
+        array[j + 1] = item
+    return array
+
+def tampilanSortir():
+    pass
 home()
 
