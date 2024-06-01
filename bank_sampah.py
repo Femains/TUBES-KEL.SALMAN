@@ -144,6 +144,16 @@ def insertion_sort(array):
     return array
 
 def tampilkanSortir():
-    pass
+    jenis_sampah = ["Plastik", "Logam", "Kaca", "Elektronik", "Karet", "Sisa Makanan", "Kotoran Hewan", "Dedaunan"]
+
+
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    print("Pilih jenis sampah untuk disortir:")
+    print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+    for i in range(len(jenis_sampah)) :
+        print(f"{i+1} {jenis_sampah[i]} ")
+
+    pilihan = int(input("MASUKKAN PILIHAN => "))
+    
 home()
 
