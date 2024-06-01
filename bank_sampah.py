@@ -61,6 +61,7 @@ def tampilkanMenu():
             sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")
         else:
             print("Input yang dimasukan invalid, harap coba kembali")
+            tampilkanMenu()
 
 def tampilkanSampah():
     print("---ORGANIK---")
@@ -110,8 +111,6 @@ def insertion_sort(array):
 
 def tampilkanSortir():
     jenis_sampah = ["Plastik", "Logam", "Kaca", "Elektronik", "Karet", "Sisa Makanan", "Kotoran Hewan", "Dedaunan"]
-
-
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
     print("Pilih jenis sampah untuk disortir:")
     print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
@@ -121,13 +120,11 @@ def tampilkanSortir():
     pilihan = int(input("MASUKKAN PILIHAN => "))
     if pilihan in range(1, 9): 
         gabung.clear()
-
     if pilihan == 1 :
         semua(plastik)
         print("")
         for kecamatan, berat in insertion_sort(gabung):
-            print(f"- {kecamatan} {berat} kg")
-        
+            print(f"- {kecamatan} {berat} kg")  
     elif pilihan == 2 :
         semua(logam)
         print("")
