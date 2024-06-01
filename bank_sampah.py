@@ -43,7 +43,7 @@ def kembali():
     else:
         print("TOLONG MASUKAN ANGKA SESUAI DENGAN YANG TERSEDIA!")
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
-        home()
+        list_kecamatan()
 def tampilkanMenu():
         for t in range(1):
             print(f"{t+1}. Jenis Sampah")
