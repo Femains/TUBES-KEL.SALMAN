@@ -23,6 +23,10 @@ def home():
         list_kecamatan()
     elif menu_pilih == 2:
         tampilkanSortir()
+    else : 
+        print("Input yang dimasukan invalid, harap coba kembali")
+        print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
+        home()
 
 def list_kecamatan():
     for i in range(len(kecamatan)):
@@ -163,7 +167,7 @@ def tampilkanSortir():
             
     else:
         print("Input yang dimasukan invalid, harap coba kembali")
-        tampilkansortir()
+        tampilkanSortir()
 
     while True:
         print("─━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━──━─")
@@ -179,7 +183,7 @@ def tampilkanSortir():
             print(" ")
             print(" ")
             tampilkanSortir()
-        elif pilihan 1 == 2:
+        elif pilihan1 == 2:
             home()
         elif pilihan1 == 3:
             sys.exit("Keluar dari program, terima kasih telah menggunakan program kami")     
